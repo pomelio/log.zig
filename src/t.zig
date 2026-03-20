@@ -19,7 +19,7 @@ pub fn getRandom() std.Random.DefaultPrng {
 }
 
 pub fn timestamp() i64 {
-    return 9999999999999;
+    return std.time.milliTimestamp();
 }
 
 pub const is_test = @import("builtin").is_test;
